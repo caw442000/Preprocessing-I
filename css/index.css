@@ -140,6 +140,7 @@ body {
 }
 .container {
   width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 .container .header {
@@ -151,8 +152,8 @@ body {
 .container .header nav {
   display: flex;
   width: 30%;
-  align-items: flex-end;
   justify-content: space-between;
+  margin: left;
 }
 .container .header nav a {
   display: flex;
@@ -190,4 +191,72 @@ body {
 }
 .container .top .toptop h4 {
   font-size: 1.5rem;
+}
+.container .middle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.container .middle .words {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.words h2 {
+  font-size: 2rem;
+  line-height: 2;
+}
+.words p {
+  display: flex;
+  font-size: 1.1rem;
+}
+.container .middle .list {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container .middle .list h3 {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.container .middle .stuff {
+  display: flex;
+  flex-direction: column;
+}
+.container .middle .stuff li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid gray;
+  padding: 2% 1%;
+}
+.container .bottom h3 {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+.container .bottom .work {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 2% 0;
+}
+.work ul .title {
+  font-weight: bold;
+}
+.container .bottom .work ul {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-bottom: 1px solid lightgray;
+}
+.container .bottom .work ul li {
+  padding: 3% 0;
+  border-bottom: 1px solid lightgray;
+}
+.white {
+  background-color: white;
+}
+.gray {
+  background-color: lightgray;
 }

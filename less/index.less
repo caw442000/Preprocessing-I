@@ -70,6 +70,7 @@ html, body {
 	// display: flex;
 	// flex-direction: column;
 	width:90%;
+	max-width: 100%;
 	// justify-content: center;
 	// align-items: center;
 	margin:0 auto;
@@ -90,8 +91,9 @@ html, body {
 		display: flex;
 		width: 30%;
 		// justify-content: space-between;
-		align-items: flex-end;
+		// align-items: flex-end;
 		justify-content: space-between;
+		margin: left;
 		// padding: 2% 0;
 
 		a{
@@ -160,7 +162,107 @@ html, body {
 
 }
 
+// Middle Section Elements
+
+.container .middle{
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+
+	padding: 2% 0;
+
+}
+
+.container .middle .words{
+	display:flex;
+	flex-direction: column;
+	width: 45%;
+	// padding: 2% 0;
+}
+.words h2{
+	font-size:2rem;
+	line-height: 2;
+}
+
+.words 	p{
+	display: flex;
+	// width: 90%;
+	// padding: 2% 0;
+	font-size: 1.1rem;
+
+}//this closes the paragraph tag
+.container .middle .list{
+	display:flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.container .middle .list h3 {
+	font-size:1.4rem;
+	line-height:2;
+}
+
+.container .middle .stuff{
+	display:flex;
+	flex-direction: column;
+
+}
+
+.container .middle .stuff li{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	border:1px solid gray;
+	padding:2% 1%;
+}
+
+
 // Bottom Section Elements
+.container .bottom h3 {
+	font-size:1.4rem;
+	line-height:2;
+}
+
+.container .bottom .work{
+	display:flex;
+	// flex-direction: column;
+	width:100%;
+	justify-content: space-evenly;
+	padding:2% 0;
+}
+
+.work ul .title{
+	font-weight: bold;
+}
+
+
+.container .bottom .work ul{
+	display:flex;
+	flex-direction: column;
+	width:25%;
+	border-bottom: 1px solid lightgray;
+	
+
+
+
+}
+
+.container .bottom .work ul li{	
+	padding:3% 0;
+	border-bottom: 1px solid lightgray;
+}
+
+.white{
+	background-color: white;
+}
+
+.gray{
+	background-color: lightgray;
+}
+
+
+
+
 
 
 
