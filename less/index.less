@@ -82,58 +82,86 @@ html, body {
 .container .header{
 	display:flex;
 	width:100%;
+	//  flex-direction: row-reverse;
 	justify-content: flex-end;
 	padding: 2% 0;
-}
 
-.header nav{
-	display: flex;
-	width: 30%;
-	justify-content: space-between;
-	// padding: 2% 0;
-}
+	nav{
+		display: flex;
+		width: 30%;
+		// justify-content: space-between;
+		align-items: flex-end;
+		justify-content: space-between;
+		// padding: 2% 0;
 
-.container nav a{
-	
-	width:8%;
-}
+		a{
+			display:flex;
+			
+			width:14%;
+			justify-content: space-between;
+			color: grey;
+		}//this closes the links
+	}//this closes the nav
+}//this closes the header
+
+
+
+
 
 // Top Section Elements
 
 .container .top{
 	display: flex;
 	flex-direction: column;
-	background-color:gray;
+	background-color:lightseagreen;
 	// height: 70vh;
 	width:100%;
 	// align-content: center;
 	// padding: 5% 4% 7% 4%;
 	padding:4%;
 
+
+
+	p{
+		display: flex;
+		width: 90%;
+		padding: 2% 0;
+		font-size: 1.1rem;
+	
+	}//this closes the paragraph tag
+
+	button{
+		background-color: lightgreen;
+		font-size: 1.2rem;
+		padding: 1% 2%;
+	}//this closes the button
+
+	.toptop{
+		border-bottom: 1px solid black;
+		padding-bottom: 2%;
+
+		img{
+
+			width:35%;
+		}//this closes the image
+
+		h1{
+			font-size: 4rem;
+		}//this closes the h1
+		
+		h4{
+			font-size: 1.5rem;
+		}//this closes the h4
+
+
+	}//this closes the very top section
+
+
+
 }
-.container .top .toptop{
-	border-bottom: 1px solid black;
-	padding-bottom: 2%;
-}
-.toptop img{
 
-	width:45%;
-}
+// Bottom Section Elements
 
-.toptop h1{
-	font-size: 4rem;
-}
-
-.toptop h4{
-	font-size: 1.5rem;
-}
-
-.top p{
-width: 100%;
-
-
-
-}
 
 
 
