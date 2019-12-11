@@ -156,9 +156,7 @@ body {
   margin: left;
 }
 .container .header nav a {
-  display: flex;
   width: 14%;
-  justify-content: space-between;
   color: grey;
 }
 .container .top {
@@ -259,4 +257,22 @@ body {
 }
 .gray {
   background-color: lightgray;
+}
+.container footer {
+  width: 100%;
+  text-align: center;
+  margin: 3% 0;
+  padding: 3% 0;
+}
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+ul.icons li {
+  display: inline-block;
+  padding: 0 0.75rem 0 0;
+}
+ul.icons li:last-child {
+  padding-right: 0;
 }
