@@ -66,6 +66,25 @@ html, body {
 }
 
 
+// Variables
+
+@boxcolor: lightseagreen;
+@btncolor: lightgreen;
+
+//Mixin
+.coladj{
+	display: flex;
+	flex-direction: column;
+}
+
+.titleheader{
+	font-size:1.4rem;
+	line-height:2;
+
+}
+
+
+
 .container{
 	// display: flex;
 	// flex-direction: column;
@@ -86,6 +105,26 @@ html, body {
 	//  flex-direction: row-reverse;
 	justify-content: flex-end;
 	padding: 2% 0;
+
+	@media (max-width:500px){
+	
+		display: flex;
+		flex-direction: column-reverse;
+		width:   100%;
+		height: 30vh;
+		/* margin:25% 0; */
+		// padding:4% 0;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 100%;
+
+		
+	}
+	
+
+
+
+
 
 	nav{
 		display: flex;
@@ -113,9 +152,8 @@ html, body {
 // Top Section Elements
 
 .container .top{
-	display: flex;
-	flex-direction: column;
-	background-color:lightseagreen;
+	.coladj();
+	background-color:@boxcolor;
 	// height: 70vh;
 	width:100%;
 	// align-content: center;
@@ -133,7 +171,7 @@ html, body {
 	}//this closes the paragraph tag
 
 	button{
-		background-color: lightgreen;
+		background-color: @btncolor;
 		font-size: 1.2rem;
 		padding: 1% 2%;
 	}//this closes the button
@@ -174,8 +212,7 @@ html, body {
 }
 
 .container .middle .words{
-	display:flex;
-	flex-direction: column;
+	.coladj();
 	width: 45%;
 	// padding: 2% 0;
 }
@@ -192,25 +229,21 @@ html, body {
 
 }//this closes the paragraph tag
 .container .middle .list{
-	display:flex;
-	flex-direction: column;
+	.coladj();
 	width: 45%;
 }
 
 .container .middle .list h3 {
-	font-size:1.4rem;
-	line-height:2;
+	.titleheader();
 }
 
 .container .middle .stuff{
-	display:flex;
-	flex-direction: column;
+	.coladj();
 
 }
 
 .container .middle .stuff li{
-	display:flex;
-	flex-direction: column;
+	.coladj();
 	width:100%;
 	border:1px solid gray;
 	padding:2% 1%;
@@ -219,8 +252,8 @@ html, body {
 
 // Bottom Section Elements
 .container .bottom h3 {
-	font-size:1.4rem;
-	line-height:2;
+	.titleheader();
+
 }
 
 .container .bottom .work{
@@ -237,8 +270,7 @@ html, body {
 
 
 .container .bottom .work ul{
-	display:flex;
-	flex-direction: column;
+	.coladj();
 	width:25%;
 	border-bottom: 1px solid lightgray;
 	
@@ -289,7 +321,40 @@ ul.icons {
 
 @media (max-width:500px){
 
+
+      .container header nav {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        // padding-bottom:3%;
+        /* padding-top:0%; */
+        margin:0;
+	  }
+	  .container header div{
+        display:flex;
+        justify-content: center;
+        width:100%;
+        border-bottom: 1px solid black;
+
+
+    }
+      .container header nav a{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        padding: 3% 0;
+        border-bottom: 1px solid black;
+
+      }
+	img{
+		display:none;
+	}
+
 }
+
+
 
 
 
