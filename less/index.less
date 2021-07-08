@@ -50,10 +50,305 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 3px solid black;
+	max-width: 100%;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	// width:95%
+	// display:flex;
+	// justify-content:center;
+	// font-size: 62.5%;
 }
+
+
+// Variables
+
+@boxcolor: lightseagreen;
+@btncolor: lightgreen;
+
+//Mixin
+.coladj{
+	display: flex;
+	flex-direction: column;
+}
+
+.titleheader{
+	font-size:1.4rem;
+	line-height:2;
+
+}
+
+
+
+.container{
+	// display: flex;
+	// flex-direction: column;
+	width:90%;
+	max-width: 100%;
+	// justify-content: center;
+	// align-items: center;
+	margin:0 auto;
+
+}
+
+// Header Elements
+
+
+.container .header{
+	display:flex;
+	width:100%;
+	//  flex-direction: row-reverse;
+	justify-content: flex-end;
+	padding: 2% 0;
+	max-width: 100%;
+
+	@media (max-width:500px){
+	
+		display: flex;
+		flex-direction: column-reverse;
+		width:   100%;
+		height: 100vh;
+		/* margin:25% 0; */
+		// padding:4% 0;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 100%;
+
+		
+	}
+	
+
+
+
+
+
+	nav{
+		display: flex;
+		width: 30%;
+		// justify-content: space-between;
+		// align-items: flex-end;
+		justify-content: space-between;
+		margin: left;
+		// padding: 2% 0;
+
+		@media (max-width:500px) {
+			width: 100%;
+			display:flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height=100vh;
+			// padding-bottom:3%;
+			/* padding-top:0%; */
+			margin:0;
+		}
+
+		a{
+			// display:flex;
+			
+			width:14%;
+			// justify-content: space-between;
+			color: grey;
+
+			@media (max-width:500px){
+				display:flex;
+				width:100%;
+				justify-content: center;
+				padding: 3% 0;
+				border-bottom: 1px solid black;
+			}
+		}//this closes the links
+	}//this closes the nav
+}//this closes the header
+
+
+
+
+
+// Top Section Elements
+
+.container .top{
+	.coladj();
+	background-color:@boxcolor;
+	// height: 70vh;
+	width:100%;
+	// align-content: center;
+	// padding: 5% 4% 7% 4%;
+	padding:4%;
+
+
+
+	p{
+		display: flex;
+		width: 90%;
+		padding: 2% 0;
+		font-size: 1.1rem;
+	
+	}//this closes the paragraph tag
+
+	button{
+		background-color: @btncolor;
+		font-size: 1.2rem;
+		padding: 1% 2%;
+	}//this closes the button
+
+	.toptop{
+		border-bottom: 1px solid black;
+		padding-bottom: 2%;
+
+		img{
+
+			width:35%;
+			@media (max-width:500px){
+				  display:none;
+			}
+		}//this closes the image
+
+		h1{
+			font-size: 4rem;
+		}//this closes the h1
+		
+		h4{
+			font-size: 1.5rem;
+		}//this closes the h4
+
+
+	}//this closes the very top section
+
+
+
+}
+
+// Middle Section Elements
+
+.container .middle{
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+
+	padding: 2% 0;
+
+}
+
+.container .middle .words{
+	.coladj();
+	width: 45%;
+	// padding: 2% 0;
+}
+.words h2{
+	font-size:2rem;
+	line-height: 2;
+}
+
+.words 	p{
+	display: flex;
+	// width: 90%;
+	// padding: 2% 0;
+	font-size: 1.1rem;
+
+}//this closes the paragraph tag
+.container .middle .list{
+	.coladj();
+	width: 45%;
+}
+
+.container .middle .list h3 {
+	.titleheader();
+}
+
+.container .middle .stuff{
+	.coladj();
+
+}
+
+.container .middle .stuff li{
+	.coladj();
+	width:100%;
+	border:1px solid gray;
+	padding:2% 1%;
+}
+
+
+// Bottom Section Elements
+.container .bottom h3 {
+	.titleheader();
+
+}
+
+.container .bottom .work{
+	display:flex;
+	// flex-direction: column;
+	width:100%;
+	justify-content: space-evenly;
+	padding:2% 0;
+}
+
+.work ul .title{
+	font-weight: bold;
+}
+
+
+.container .bottom .work ul{
+	.coladj();
+	width:25%;
+	border-bottom: 1px solid lightgray;
+	
+
+
+
+}
+
+.container .bottom .work ul li{	
+	padding:3% 0;
+	border-bottom: 1px solid lightgray;
+}
+
+.white{
+	background-color: white;
+}
+
+.gray{
+	background-color: lightgray;
+}
+
+
+// Footer
+.container footer{
+	width:100%;
+	text-align: center;
+	margin: 3% 0;
+	padding: 3% 0;
+}
+
+
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+
+	li {
+		display: inline-block;
+		padding: 0 0.75rem 0 0;
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+//media queries moved to be nested
+
+
+
+
+
+
+
+
+
 
